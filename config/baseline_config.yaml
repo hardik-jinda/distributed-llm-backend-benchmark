@@ -1,0 +1,34 @@
+# Baseline Experiment Configuration
+
+experiment:
+  name: "baseline_7b_world4"
+  output_dir: "results"
+
+# Model Configuration
+model:
+  size: "7B"
+  hidden_size: 4096
+  num_layers: 32
+  num_heads: 32
+  ffn_intermediate: 16384
+
+# Parallelism Configuration
+parallelism:
+  world_size: 4
+  cores_per_rank: 14
+
+# Input Configuration
+input:
+  batch_size: 8
+  sequence_length: 512
+  seed: 42
+
+# Execution Configuration
+execution:
+  warmup_iterations: 5
+  benchmark_iterations: 10
+
+# System Configuration
+system:
+  omp_num_threads: 14
+  mkl_num_threads: 14
