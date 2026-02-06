@@ -1,0 +1,27 @@
+{
+  "mpi_implementation": "deepspeed_gloo",
+  "operation": "reduce",
+  "num_ranks": 8,
+  "data_size_name": "64KB",
+  "num_elements": 16384,
+  "dtype": "float16",
+  "mean_time_us": 604.6105618588626,
+  "median_time_us": 603.1845696270466,
+  "min_time_us": 488.08613792061806,
+  "max_time_us": 780.6778885424137,
+  "std_dev_us": 48.41861992666489,
+  "p95_time_us": 687.2778525575995,
+  "p99_time_us": 716.8062217533588,
+  "load_imbalance_percent": 7.609908151764065,
+  "per_rank_means_us": [
+    650.6208702921867,
+    564.0391260385513,
+    577.9449921101332,
+    590.467369183898,
+    597.3543459549546,
+    602.7262937277555,
+    622.5891830399632,
+    631.1423145234585
+  ],
+  "bandwidth_gbps": 0.31272901228934447
+}
