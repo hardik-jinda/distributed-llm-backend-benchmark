@@ -1,0 +1,21 @@
+{
+  "mpi_implementation": "intelmpi",
+  "operation": "broadcast",
+  "num_ranks": 2,
+  "data_size_name": "64KB",
+  "num_elements": 16384,
+  "dtype": "<class 'numpy.float16'>",
+  "mean_time_us": 6.279756780713797,
+  "median_time_us": 5.242647603154182,
+  "min_time_us": 2.328772097826004,
+  "max_time_us": 18.454156816005707,
+  "std_dev_us": 4.594410613828784,
+  "p95_time_us": 16.71647187322378,
+  "p99_time_us": 17.744153738021847,
+  "load_imbalance_percent": 24.3511355568038,
+  "per_rank_means_us": [
+    4.750564694404602,
+    7.808948867022991
+  ],
+  "bandwidth_gbps": 3.307393388846833
+}

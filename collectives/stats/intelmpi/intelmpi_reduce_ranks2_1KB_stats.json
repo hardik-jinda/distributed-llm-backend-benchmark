@@ -1,0 +1,21 @@
+{
+  "mpi_implementation": "intelmpi",
+  "operation": "reduce",
+  "num_ranks": 2,
+  "data_size_name": "1KB",
+  "num_elements": 256,
+  "dtype": "<class 'numpy.float16'>",
+  "mean_time_us": 12.953616678714752,
+  "median_time_us": 13.443175703287125,
+  "min_time_us": 9.933952242136002,
+  "max_time_us": 17.130281776189804,
+  "std_dev_us": 2.4337907250267077,
+  "p95_time_us": 15.823752619326115,
+  "p99_time_us": 16.191587783396244,
+  "load_imbalance_percent": 18.581168523040017,
+  "per_rank_means_us": [
+    15.36055002361536,
+    10.546683333814144
+  ],
+  "bandwidth_gbps": 0.05567184059586267
+}
