@@ -1,0 +1,21 @@
+{
+  "mpi_implementation": "deepspeed_oneccl",
+  "operation": "allreduce",
+  "num_ranks": 2,
+  "data_size_name": "1KB",
+  "num_elements": 256,
+  "dtype": "float16",
+  "mean_time_us": 26.05159068480134,
+  "median_time_us": 25.565503165125847,
+  "min_time_us": 23.08189868927002,
+  "max_time_us": 45.71909084916115,
+  "std_dev_us": 3.0220590868429142,
+  "p95_time_us": 27.817534282803532,
+  "p99_time_us": 42.43796691298482,
+  "load_imbalance_percent": 0.3101865543284885,
+  "per_rank_means_us": [
+    25.97078215330839,
+    26.13239921629429
+  ],
+  "bandwidth_gbps": 0.020859433087868324
+}

@@ -1,0 +1,23 @@
+{
+  "mpi_implementation": "deepspeed_gloo",
+  "operation": "broadcast",
+  "num_ranks": 4,
+  "data_size_name": "1KB",
+  "num_elements": 256,
+  "dtype": "float16",
+  "mean_time_us": 106.55037360265851,
+  "median_time_us": 65.21353498101234,
+  "min_time_us": 27.93874591588974,
+  "max_time_us": 3726.3110280036926,
+  "std_dev_us": 370.3134813002838,
+  "p95_time_us": 95.00270243734117,
+  "p99_time_us": 1665.024072863143,
+  "load_imbalance_percent": 12.98600221834054,
+  "per_rank_means_us": [
+    87.6192469149828,
+    104.73177768290043,
+    113.46346233040094,
+    120.38700748234987
+  ],
+  "bandwidth_gbps": 0.0005118597504283827
+}

@@ -1,0 +1,23 @@
+{
+  "mpi_implementation": "openmpi",
+  "operation": "sendrecv",
+  "num_ranks": 4,
+  "data_size_name": "1KB",
+  "num_elements": 256,
+  "dtype": "<class 'numpy.float16'>",
+  "mean_time_us": 2.0317850000228788,
+  "median_time_us": 1.9840000007320668,
+  "min_time_us": 1.6499999979657787,
+  "max_time_us": 6.490000000525242,
+  "std_dev_us": 0.38045515350099657,
+  "p95_time_us": 2.2870500009375405,
+  "p99_time_us": 2.520019997618291,
+  "load_imbalance_percent": 3.266831877603924,
+  "per_rank_means_us": [
+    1.9983800001099894,
+    2.097910000102843,
+    2.0981600000880007,
+    1.932689999790682
+  ],
+  "bandwidth_gbps": 0.2938903902400826
+}

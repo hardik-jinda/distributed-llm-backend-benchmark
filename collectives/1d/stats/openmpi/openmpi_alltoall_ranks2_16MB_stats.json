@@ -1,0 +1,21 @@
+{
+  "mpi_implementation": "openmpi",
+  "operation": "alltoall",
+  "num_ranks": 2,
+  "data_size_name": "16MB",
+  "num_elements": 4194304,
+  "dtype": "<class 'numpy.float16'>",
+  "mean_time_us": 2334.3042000000655,
+  "median_time_us": 2255.823499999643,
+  "min_time_us": 2241.7140000001723,
+  "max_time_us": 8258.10300000107,
+  "std_dev_us": 627.9418124111692,
+  "p95_time_us": 2270.2025499993897,
+  "p99_time_us": 4332.186110001181,
+  "load_imbalance_percent": 0.30336962937394735,
+  "per_rank_means_us": [
+    2341.3857700000663,
+    2327.2226300000652
+  ],
+  "bandwidth_gbps": 1.892081026356534
+}
