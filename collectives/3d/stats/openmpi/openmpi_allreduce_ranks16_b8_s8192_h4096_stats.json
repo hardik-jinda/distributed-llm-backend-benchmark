@@ -1,0 +1,14 @@
+{
+  "implementation": "openmpi",
+  "operation": "allreduce",
+  "num_ranks": 16,
+  "hidden_dim": 4096,
+  "seq_len": 8192,
+  "batch": 8,
+  "tensor_size_mb": 512.0,
+  "num_elements": 268435456,
+  "mean_time_ms": 11129.03283346881,
+  "median_time_ms": 11122.306430479512,
+  "min_time_ms": 10605.087220668793,
+  "max_time_ms": 11600.05266778171
+}

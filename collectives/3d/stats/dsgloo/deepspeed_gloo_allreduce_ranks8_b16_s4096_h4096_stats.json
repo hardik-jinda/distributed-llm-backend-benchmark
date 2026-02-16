@@ -1,0 +1,14 @@
+{
+  "implementation": "deepspeed_gloo",
+  "operation": "allreduce",
+  "num_ranks": 8,
+  "hidden_dim": 4096,
+  "seq_len": 4096,
+  "batch": 16,
+  "tensor_size_mb": 512.0,
+  "num_elements": 268435456,
+  "mean_time_ms": 1033.4126265376108,
+  "median_time_ms": 1051.6940443776548,
+  "min_time_ms": 764.1221210360527,
+  "max_time_ms": 1170.2749859541655
+}

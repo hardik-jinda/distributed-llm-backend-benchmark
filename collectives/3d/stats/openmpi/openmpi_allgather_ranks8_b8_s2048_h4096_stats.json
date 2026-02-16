@@ -1,0 +1,14 @@
+{
+  "implementation": "openmpi",
+  "operation": "allgather",
+  "num_ranks": 8,
+  "hidden_dim": 4096,
+  "seq_len": 2048,
+  "batch": 8,
+  "tensor_size_mb": 128.0,
+  "num_elements": 67108864,
+  "mean_time_ms": 3027.6335445197765,
+  "median_time_ms": 3032.16545493342,
+  "min_time_ms": 2384.0573779307306,
+  "max_time_ms": 3063.453152310103
+}

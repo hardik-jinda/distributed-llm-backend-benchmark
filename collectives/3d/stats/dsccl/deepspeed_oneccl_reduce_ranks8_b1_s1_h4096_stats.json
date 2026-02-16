@@ -1,0 +1,14 @@
+{
+  "implementation": "deepspeed_oneccl",
+  "operation": "reduce",
+  "num_ranks": 8,
+  "hidden_dim": 4096,
+  "seq_len": 1,
+  "batch": 1,
+  "tensor_size_mb": 0.0078,
+  "num_elements": 4096,
+  "mean_time_ms": 0.03986220574006438,
+  "median_time_ms": 0.03841053694486618,
+  "min_time_ms": 0.03152899444103241,
+  "max_time_ms": 0.13418635353446007
+}

@@ -1,0 +1,14 @@
+{
+  "implementation": "intelmpi",
+  "operation": "allgather",
+  "num_ranks": 8,
+  "hidden_dim": 2048,
+  "seq_len": 2048,
+  "batch": 1,
+  "tensor_size_mb": 8.0,
+  "num_elements": 4194304,
+  "mean_time_ms": 91.99526914802846,
+  "median_time_ms": 88.69423251599073,
+  "min_time_ms": 71.86377793550491,
+  "max_time_ms": 124.888617079705
+}

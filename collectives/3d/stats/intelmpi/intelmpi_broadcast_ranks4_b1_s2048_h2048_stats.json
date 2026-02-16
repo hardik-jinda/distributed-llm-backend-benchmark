@@ -1,0 +1,14 @@
+{
+  "implementation": "intelmpi",
+  "operation": "broadcast",
+  "num_ranks": 4,
+  "hidden_dim": 2048,
+  "seq_len": 2048,
+  "batch": 1,
+  "tensor_size_mb": 8.0,
+  "num_elements": 4194304,
+  "mean_time_ms": 2.2398458677344024,
+  "median_time_ms": 2.238908549770713,
+  "min_time_ms": 2.1810829639434814,
+  "max_time_ms": 2.3106830194592476
+}

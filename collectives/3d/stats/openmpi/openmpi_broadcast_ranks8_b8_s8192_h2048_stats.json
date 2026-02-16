@@ -1,0 +1,14 @@
+{
+  "implementation": "openmpi",
+  "operation": "broadcast",
+  "num_ranks": 8,
+  "hidden_dim": 2048,
+  "seq_len": 8192,
+  "batch": 8,
+  "tensor_size_mb": 256.0,
+  "num_elements": 134217728,
+  "mean_time_ms": 88.58601878513582,
+  "median_time_ms": 88.04504200816154,
+  "min_time_ms": 87.70179003477097,
+  "max_time_ms": 135.33329078927636
+}
