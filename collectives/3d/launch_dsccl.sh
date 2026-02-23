@@ -2,7 +2,7 @@
 
 CONFIG_FILE=config_4.txt
 SCRIPT=dsccl.py
-MASTER_PORT=29501
+MASTER_PORT=29502
 
 # Parse config and build core list + rank count
 CORE_LIST=""
@@ -33,26 +33,20 @@ echo "Launching with $NUM_RANKS ranks"
 echo "Core binding list: $CORE_LIST"
 export CCL_LOG_LEVEL=debug
 
-############################################
-# oneCCL tuning variables (uncomment to test)
-############################################
 
-# export CCL_WORKER_COUNT=2
+export CCL_WORKER_COUNT=1
 # Values: 1,2,4,... (number of communication worker threads per rank)
 
-# export CCL_WORKER_AFFINITY=auto
+export CCL_WORKER_AFFINITY=10,11,12,13
 # Values: auto | 0,1 | 4,5,6 (comma-separated core list)
 
 # export CCL_WORKER_MEM_AFFINITY=auto
 # Values: auto | 0 | 1 | 0,1 (NUMA node list)
 
-export CCL_ALLREDUCE=direct
+# export CCL_ALLREDUCE=ring_rma
 # Values: topo | direct | rabenseifner | nreduce | ring | double_tree | recursive_doubling | 2d
 
-# export CCL_ALLGATHER=ring
-# Values: topo | direct | naive | flat | multi_bcast | ring
-
-# export CCL_FUSION=1
+export CCL_FUSION=0
 # Values: 0 (disable) | 1 (enable)
 
 # export CCL_FUSION_BYTES_THRESHOLD=1048576
@@ -63,12 +57,6 @@ export CCL_ALLREDUCE=direct
 
 # export CCL_FUSION_CYCLE_MS=1
 # Values: integer (ms), e.g., 1 | 5 | 10
-
-# export CCL_BLOCKING_WAIT=0
-# Values: 0 (spin/progress) | 1 (blocking wait, lower CPU usage)
-
-# export CCL_SPIN_COUNT=1000
-# Values: integer, e.g., 100 | 1000 | 10000
 
 # export CCL_ATL_TRANSPORT=mpi
 # Values: mpi | ofi
@@ -83,4 +71,4 @@ deepspeed \
     --bind_cores_to_rank \
     --bind_core_list $CORE_LIST \
     --master_port $MASTER_PORT \
-    $SCRIPT
+    $SCRIPT > logs/log.log 
