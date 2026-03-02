@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CONFIG_FILE=config_4.txt
+CONFIG_FILE=config_8.txt
 SCRIPT=dsccl.py
 MASTER_PORT=29502
 
@@ -37,7 +37,7 @@ export CCL_LOG_LEVEL=debug
 export CCL_WORKER_COUNT=1
 # Values: 1,2,4,... (number of communication worker threads per rank)
 
-export CCL_WORKER_AFFINITY=10,11,12,13
+export CCL_WORKER_AFFINITY=10-11,12-13,14-15,16-17,18-19,20-21,22-23,24-25
 # Values: auto | 0,1 | 4,5,6 (comma-separated core list)
 
 # export CCL_WORKER_MEM_AFFINITY=auto
@@ -71,4 +71,4 @@ deepspeed \
     --bind_cores_to_rank \
     --bind_core_list $CORE_LIST \
     --master_port $MASTER_PORT \
-    $SCRIPT > logs/log.log 
+    $SCRIPT > logs/worker1dsccl1plus1.log 
