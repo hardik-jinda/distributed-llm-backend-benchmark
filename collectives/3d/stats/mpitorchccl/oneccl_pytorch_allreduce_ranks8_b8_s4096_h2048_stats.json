@@ -1,0 +1,14 @@
+{
+  "implementation": "oneccl_pytorch",
+  "operation": "allreduce",
+  "num_ranks": 8,
+  "hidden_dim": 2048,
+  "seq_len": 4096,
+  "batch": 8,
+  "tensor_size_mb": 128.0,
+  "num_elements": 67108864,
+  "mean_time_ms": 81.75262241857126,
+  "median_time_ms": 80.82835841923952,
+  "min_time_ms": 67.51304492354393,
+  "max_time_ms": 112.68196161836386
+}

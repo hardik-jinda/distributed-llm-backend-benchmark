@@ -1,0 +1,14 @@
+{
+  "implementation": "mpi_oneccl",
+  "operation": "allreduce",
+  "num_ranks": 4,
+  "hidden_dim": 4096,
+  "seq_len": 4096,
+  "batch": 8,
+  "tensor_size_mb": 256.0,
+  "num_elements": 134217728,
+  "mean_time_ms": 122.24389845738187,
+  "median_time_ms": 122.3356407135725,
+  "min_time_ms": 119.9107114225626,
+  "max_time_ms": 122.8785589337349
+}
